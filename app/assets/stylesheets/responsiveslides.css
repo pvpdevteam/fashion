@@ -1,0 +1,114 @@
+/*! http://responsiveslides.com v1.32 by @viljamis */
+
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.rslides li {
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
+	min-height:235px;
+	min-width:420px;
+}
+.rslides {
+	margin: 0;
+}
+.callbacks .caption {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  font-size: 20px;
+  color: #fff;
+  background: #000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  margin: 0;
+  max-width: none;
+  }
+
+.callbacks_nav {
+  position: absolute;
+  z-index: 40000;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 104px;
+  width: 60px;
+  background: transparent url(../images/nav1.png) no-repeat left top;
+  top:0;
+  opacity: 0.6;
+  }
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.callbacks_nav {
+  width:40px;
+  height:75px;
+  background: transparent url(../images/nav1_1.png) no-repeat left top;
+}
+}
+
+.callbacks_nav:active {
+  opacity: 1.0;
+  }
+
+.callbacks_nav.next {
+  background-position: right top;
+  }
+
+.overlap_widget_wrapper {
+	font-family: CarismaRegular, Arial, Helvetica, sans-serif;
+	position: relative;
+	margin:0 auto;
+}
+.overlap_widget_wrapper .left_image {
+	position: absolute;
+	left: 0px;
+}
+.overlap_widget_wrapper .left_image .placeholder {
+	position: absolute;
+	left: 0px;
+	overflow: hidden;
+	height: 1500px;
+}
+.overlap_widget_wrapper .left_image img {
+	position: absolute;
+	left: 0px;
+}
+.overlap_widget_wrapper .right_image {
+	position: absolute;
+	right: 0px;
+}
+.overlap_widget_wrapper .right_image .placeholder {
+	position: absolute;
+	right: 0px;
+	overflow: hidden;
+}
+.overlap_widget_wrapper .right_image img {
+	position: absolute;
+	right:0px;
+}
+.overlap_widget_wrapper .right_image .placeholder, .overlap_widget_wrapper .left_image .placeholder, .overlap_widget_wrapper {
+	height: 1500px;
+	text-align:center;
+}

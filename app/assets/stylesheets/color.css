@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+.product .product-price span.new-price, #slogan li a:hover {
+	color:#ff0000 !important;
+}
+#footer_button, .carousel-nav a:hover,
+ul.megamenu a:hover, ul.megamenu a.content-link.mm-item-link-hover, .color_mark {
+	background-color:#ff0000;
+}
+ul.megamenu div.mm-item-content {
+	border-top-color: #ff0000;
+}
+.color, .color:hover { 	color:#ff0000;}
+.color_mark { color:#fff;}

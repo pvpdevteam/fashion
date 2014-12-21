@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <!-- CSS  ================================================== -->
+<!-- <link rel="stylesheet" href="/assets/stylesheets/base.css">
+<link rel="stylesheet" href="/assets/stylesheets/skeleton.css">
+<link rel="stylesheet" href="/assets/stylesheets/dresscode.css">
+<link rel="stylesheet" href="/assets/stylesheets/font-awesome.css">
+<link rel="stylesheet" href="/assets/stylesheets/zoom.css"> -->
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- <link rel="stylesheet" type="text/css" href="/assets/stylesheets/menu.css" />
+<link rel="stylesheet" type="text/css" href="/assets/stylesheets/product-slider.css" />
+<link rel="stylesheet" type="text/css" href="/assets/stylesheets/jquery.selectbox.css"  />
+<link rel="stylesheet" type="text/css" href="/assets/stylesheets/responsiveslides.css" />
+<link rel="stylesheet" type="text/css" href="/assets/stylesheets/prettyPhoto.css" />
+<link rel="stylesheet" type="text/css" href="/assets/stylesheets/color.css" /> -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="header">
+  <div class="container padding-1">
+    <div id="logo" class="five columns"><a href="index-2.html"><%= image_tag 'logo.png' %></a></div>
+    <div id="top_link" class="eleven columns">
+      <div class="row padding-2">
+        <div class="phone">1 (234) 5678900 </div>
+        <div class="language"> <a href="#">EN</a> <a href="#">FR</a> <a href="#">EC</a></div>
+        <div class="currency"> <a href="#">£</a> <a href="#">€</a> <a href="#">$</a></div>
+        <div class="shopping_cart">
+          <div class="shopping_cart_b" ><a href="#" class="open">Shopping Cart:  0<span> Item(s) -</span> $0.00</a></div>
+          <div id="shopping_cart_mini">
+            <div class="inner-wrapper">Recently added item(s)
+              <div class="item"> <a href="#" class="button-edit"><%= image_tag 'shopping_cart_mini_edit_button.png' %></a> <a href="#" class="button-delete"><%= image_tag 'shopping_cart_mini_delete_button.png' %></a> <a href="#" class="product-image"><%= image_tag 'product-image-minicart.jpg' %></a>
+                <div class="product-detailes"><a href="#" class="product-name">Fusce tincidunt,
+                  justo congue 
+                  egestas </a>
+                  <div class="product-price">1 x $164.25</div>
+                </div>
+              </div>
+              <div class="total">TOTAL: $164.25</div>
+              <div class="wrapper"><a href="#" class="button">VIEW CART</a> <a href="#" class="button">CHECKOUT</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="nav_first">
+          <ul>
+            <li><a href="#">Wishlist (0) </a></li>
+            <li><a href="#"> Account </a></li>
+            <li><a href="#"> My Cart </a></li>
+            <li><a href="#"> Checkout</a></li>
+          </ul>
+        </div>
+        <div id="select_top_nav">
+          <div class="select_wrapper">
+            <select name="select2" id="select2" tabindex="1">
+              <option value="">Service Tools</option>
+              <option value="">Wishlist (0) </option>
+              <option value="">Account</option>
+              <option value="">My Cart </option>
+              <option value="">Checkout</option>
+            </select>
+          </div>
+        </div>
+        <div class="select_wrapper" id="select_top">
+          <select name="select1" id="select1" tabindex="1">
+            <option value="">I am Looking for...</option>
+            <option value="">France</option>
+            <option value="">Spain</option>
+            <option value="">Bulgaria</option>
+            <option value="">Greece</option>
+            <option value="">Italy</option>
+          </select>
+          <div id="search">
+            <form action="#" method="get">
+              <input name="" type="text" value="I am Looking for..." onBlur="if(this.value == '') { this.value='I am Looking for...'}" onFocus="if (this.value == 'I am Looking for...') {this.value=''}">
+              <input name="" type="button" value=" ">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sixteen columns">
+      <nav id="mobile">
+        <div id="toggle-bar"> <strong><a class="mtoggle" href="#">MAIN MENU</a></strong> <a class="navicon mtoggle" href="#">MAIN MENU</a> </div>
+        <ul id="mmenu">
+          <li><a href="index-2.html" class="image-link">Home</a></li>
+          <li> <a href="javascript:void(0)" class="content-link">Catalogue</a>
+            <ul>
+              <li><a href="product.html">Product Page</a></li>
+              <li><a href="listing.html">Listing</a></li>
+            </ul>
+          </li>
+          <li> <a href="javascript:void(0)" class="content-link">Gallery</a>
+            <ul>
+              <li><a href="gallery.html">Table View</a></li>
+              <li><a href="gallery1.html">Single Page</a></li>
+            </ul>
+          </li>
+          <li> <a href="javascript:void(0)" class="content-link">Blog</a>
+            <ul>
+              <li><a href="blog.html">List View</a></li>
+              <li><a href="blog1.html">Single Post</a></li>
+            </ul>
+          </li>
+          <li> <a href="javascript:void(0)" class="content-link">Pages</a>
+            <ul>
+              <li><a href="typography.html">Typography</a></li>
+              <li><a href="404.html">404 Page</a></li>
+              <li><a href="contact.html">Contact Page</a></li>
+            </ul>
+          </li>
+          <li> <a href="javascript:void(0)" class="content-link">Categories</a>
+            <ul>
+              <li><a href="listing.html">New In</a></li>
+              <li><a href="listing.html"> Bags</a></li>
+              <li><a href="listing.html"> Belts</a></li>
+              <li><a href="listing.html"> Jewellery</a></li>
+              <li><a href="listing.html"> Sunglasses</a></li>
+              <li><a href="listing.html"> Scarves, Hats &amp; Gloves </a></li>
+              <li><a href="listing.html">Hosiery &amp; Tights</a></li>
+              <li><a href="listing.html"> Hair Accessories</a></li>
+              <li><a href="listing.html"> Gifts</a></li>
+              <li><a href="listing.html"> Beauty</a></li>
+              <li><a href="listing.html"> Last Chance To Buy</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav id="main_menu_outer">
+        <ul class="megamenu">
+          <li><a href="index-2.html" class="image-link"><%= image_tag 'icon_home.png' %></a></li>
+          <li> <a href="javascript:void(0)" class="content-link">Catalogue</a>
+            <div class="col-wrapper">
+              <ul class="col">
+                <li><a href="product.html">Product Page</a></li>
+                <li><a href="listing.html">Listing</a></li>
+              </ul>
+            </div>
+          </li>
+          <li> <a href="javascript:void(0)" class="content-link">Gallery</a>
+            <div class="col-wrapper">
+              <ul class="col">
+                <li><a href="gallery.html">Table View</a></li>
+                <li><a href="gallery1.html">Single Page</a></li>
+              </ul>
+            </div>
+          </li>
+          <li> <a href="javascript:void(0)" class="content-link">Blog</a>
+            <div class="col-wrapper">
+              <ul class="col">
+                <li><a href="blog.html">List View</a></li>
+                <li><a href="blog1.html">Single Post</a></li>
+              </ul>
+            </div>
+          </li>
+          <li> <a href="javascript:void(0)" class="content-link">Pages</a>
+            <div class="col-wrapper">
+              <ul class="col">
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="404.html">404 Page</a></li>
+                <li><a href="contact.html">Contact Page</a></li>
+              </ul>
+            </div>
+          </li>
+          <li> <a href="javascript:void(0)" class="content-link">Categories</a>
+            <div class="col-wrapper">
+              <ul class="col">
+                <li><a href="listing.html">New In</a></li>
+                <li><a href="listing.html"> Bags</a></li>
+                <li><a href="listing.html"> Belts</a></li>
+                <li><a href="listing.html"> Jewellery</a></li>
+                <li><a href="listing.html"> Sunglasses</a></li>
+                <li><a href="listing.html"> Scarves, Hats &amp; Gloves </a></li>
+              </ul>
+              <ul class="col">
+                <li><a href="listing.html">Hosiery &amp; Tights</a></li>
+                <li><a href="listing.html"> Hair Accessories</a></li>
+                <li><a href="listing.html"> Gifts</a></li>
+                <li><a href="listing.html"> Beauty</a></li>
+                <li><a href="listing.html"> Last Chance To Buy</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<%= yield %>
+
+<div id="footer_container_w">
+  <div class="container">
+    <div class="sixteen columns">
+      <div id="footer_button"></div>
+    </div>
+  </div>
+</div>
+<div id="back-top"> <a href="#top"></a> </div>
+<div  id="footer">
+  <div class="container">
+    <div class="eight columns">
+      <div class="four columns alpha">
+        <h3 class="title">INFORMATION</h3>
+        <nav>
+          <ul>
+            <li> <a href="#"> About </a></li>
+            <li><a href="#"> Delivery </a></li>
+            <li><a href="#"> Privacy Policy </a></li>
+            <li><a href="#"> Terms &amp;  Conditions </a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="four columns omega">
+        <h3 class="title">CUSTOMER SERVICE</h3>
+        <nav>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#"> Returns</a></li>
+            <li><a href="#"> Site Map</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="eight columns" >
+      <div class="four columns alpha">
+        <h3 class="title">MY ACCOUNT</h3>
+        <nav>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#"> Order History</a></li>
+            <li><a href="#"> Wish List</a></li>
+            <li><a href="#"> Newsletter</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="four columns omega">
+        <div class="social_icons"><a href="#"><i class="icon-facebook-sign"></i></a><a href="#"><i class="icon-twitter-sign"></i></a><a href="#"><i class="icon-youtube-sign"></i></a><a href="#"><i class="icon-google-plus-sign"></i></a><a href="#"><i class="icon-linkedin-sign"></i></a><a href="#"><i class="icon-pinterest-sign "></i></a></div>
+        <form action="#" method="get">
+          <div class="wrapper">
+            <input class="pull-right" name="" type="button" value=" ">
+            <input class="pull-right" name="" type="text" value="NEWSLETTER SIGNUP" onBlur="if(this.value == '') { this.value='NEWSLETTER SIGNUP'}" onFocus="if (this.value == 'NEWSLETTER SIGNUP') {this.value=''}">
+          </div>
+        </form>
+        <div id="copyright">© 2013 DRESSCODE. All Rights Reserved.<br>
+          Designed by <a href="#">ETHEMEUK.COM</a><br>
+        </div>
+        <div id="payment_icons"><a href="#"><%= image_tag 'payment1.gif'  %></a><a href="#"><%= image_tag 'payment2.gif' %></a><a href="#"><%= image_tag 'payment3.gif'  %></a><a href="#"><%= image_tag 'payment4.gif'  %></a><a href="#"><%= image_tag 'payment5.gif'  %></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+	
+</body>
+</html>

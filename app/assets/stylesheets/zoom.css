@@ -1,0 +1,40 @@
+#zoom-gallery-outer {
+	width:100%;
+}
+#zoom-gallery-outer {
+width: 100%;
+margin:10px 0 30px 4px;
+text-align:center;
+}
+#zoom-gallery-outer li {
+margin:0 7px 0 0;
+padding: 0;
+/*width: 87px;
+height:103px;
+*/display: inline-block;
+border:1px solid #d7d7d7;
+}
+#zoom-gallery-outer li img{
+	display:block;
+}
+#zoom-big-image {
+	text-align:center; 
+	margin-bottom:10px;
+}
+#zoom-big-image img {
+	 border:1px solid #d7d7d7;
+	max-width:100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.zoomContainer { margin: 1px 0 0 1px;}
+.zoomLens { 
+	background:#fff !important; 
+	border-color:#ccc !important;
+	-webkit-transition: all 0.1s 0s ease;
+	-moz-transition: all 0.1s 0s ease;
+	-o-transition: all 0.1s 0s ease;
+}
